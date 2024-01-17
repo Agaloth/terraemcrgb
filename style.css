@@ -1,59 +1,57 @@
+/* General Styles */
+body.dark {
+  background-color: #00131E; /* Pastel cyan background */
+  color: white; /* Text color */
+  font-family: 'Quicksand', sans-serif;
+}
+
 .color {
   width: 100%;
 }
+
+/* Dark Textboxes */
 .darktextboxes {
-  background-color:#1F2933;
-  border-color:#2C3844;
-  color:white;
+  background-color: #4A5568; /* Dark cyan pastel */
+  border-color: #2C3844;
+  color: white;
 }
+
+/* Gray Text */
 .darkgray {
-  color:darkgray;
+  color: darkgray;
 }
+
 .gray {
-  color:gray;
+  color: gray;
 }
+
+/* Error Text */
 .darkerrortext {
-  color:red;
+  color: #FF0000; /* Pastel red */
 }
+
 .errortext {
-  color:darkred;
+  color: #B83227; /* Dark pastel red */
 }
+
+/* Scrollbar */
 .pp::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
+
 .pp {
-  -ms-overflow-style: none; scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-body.dark {
-  background-color:#33404D;
-  color:white;
-}
+
+/* Dark Select Dropdown */
 select.dark {
-  background-color:#1F2933;
-  border-color:#2C3844;
-  color:white;
+  background-color: #4A5568; /* Dark cyan pastel */
+  border-color: #2C3844;
+  color: white;
 }
-#colors {
-  height: 120px;
-  display: flex;
-  flex-direction: row;
-}
-@font-face {
-   font-family: MinecraftRegular;
-   src: url(./assets/fonts/MinecraftRegular.otf);
-}
-@font-face {
-   font-family: MinecraftBold;
-   src: url(./assets/fonts/MinecraftBold.otf);
-}
-@font-face {
-   font-family: MinecraftItalic;
-   src: url(./assets/fonts/MinecraftItalic.otf);
-}
-@font-face {
-   font-family: MinecraftBoldItalic;
-   src: url(./assets/fonts/MinecraftBoldItalic.otf);
-}
+
+/* Font Faces */
 @font-face {
   font-family: 'Quicksand';
   font-style: normal;
@@ -61,87 +59,239 @@ select.dark {
   font-weight: 300;
   src: url(./assets/fonts/Quicksand/300.ttf) format('truetype');
 }
+
+/* Add more font-face declarations for other weights and styles of Quicksand */
+
 @font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 500;
-  src: url(./assets/fonts/Quicksand/500.ttf) format('truetype');
+  font-family: MinecraftRegular;
+  src: url(./assets/fonts/MinecraftRegular.otf);
 }
+
 @font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 600;
-  src: url(./assets/fonts/Quicksand/600.ttf) format('truetype');
+  font-family: MinecraftBold;
+  src: url(./assets/fonts/MinecraftBold.otf);
 }
+
 @font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: url(./assets/fonts/Quicksand/700.ttf) format('truetype');
+  font-family: MinecraftItalic;
+  src: url(./assets/fonts/MinecraftItalic.otf);
 }
+
 @font-face {
-  font-family: 'Quicksand';
-  font-style: regular;
-  font-display: swap;
-  font-weight: 400;
-  src: url(./assets/fonts/Quicksand/regular.ttf) format('truetype');
+  font-family: MinecraftBoldItalic;
+  src: url(./assets/fonts/MinecraftBoldItalic.otf);
 }
+
+/* Colored Nickname Styles */
 #coloredNick {
   font-size: 4rem;
   word-wrap: break-word;
 }
+
+/* Minecraft Font Styles */
 .minecraft {
   font-family: MinecraftRegular;
 }
+
 .minecraftbold {
   font-family: MinecraftBold;
 }
+
 .minecraftitalic {
   font-family: MinecraftItalic;
 }
+
 .minecraftibold {
   font-family: MinecraftBoldItalic;
 }
+
+/* Text Decorations */
 .minecraftunderline {
   text-decoration: underline;
 }
+
 .minecraftustrike {
   text-decoration: underline line-through;
 }
+
 .minecraftstrike {
   text-decoration: line-through;
 }
-footer{
+
+/* Footer Styles */
+footer {
   display: table;
   text-align: center;
-  margin-left:0;
-  margin-right:auto;
-  margin-top:120px;
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: 120px;
 }
+
+/* Rainbow Animation for Title */
 #title {
-    position:relative;
-    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: rainbow_animation 6s ease-in-out infinite;
-    background-size: 400% 100%;
-}
-#inputs{
   position: relative;
+  background: linear-gradient(to right, #40C4FF, #66F3FF, #89F6FF, #B2EBF2, #E0F7FA); /* Pastel cyan gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
 }
+
 @keyframes rainbow_animation {
-    0%,100% {
-        background-position: 0 0;
+  0%, 100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+}
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area{
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 10s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 1s;
+    animation-duration: 6s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 1s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    animation-delay: 5s;
+    animation-duration: 10s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 1s;
+    animation-duration: 15s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 6s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
     }
 
-    50% {
-        background-position: 100% 0;
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
     }
-}
-body{
-  margin: auto;
+
 }
